@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Predicting Campus Placement data
+    </title>
+</head>
+<style>
+            <body>{
+              background-color: #05c46b;
+              font-family: verdana;
+              text-align: center;
+
+  }
+            .button {
+            border: none;
+            padding:180px 40px;
+            text align: center;
+            display: inline-block;
+            nofont-size: 20px;
+            margin: 2px 2px;
+            cursor: pointer;
+            }
+            <body>{
+               background-repeat:no-repeat;
+               background-attached:fixed;
+               background-size:cover;
+               background-image:url({{url_for('static',filename='builtin/1.jpg')}})
+               }
+           </style>
+
+<section id="hero" class="d-flex flex-column justify-content=center">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-8">
+                <form></form>
+                <body bgcolor="pink">
+                </body>
+                <h1>
+                    <center><U><font size=25>
+                        Identifying Patterns and Trends in Campus Placement Data Using Machine Learning
+                    </center></U> </font> </h1>
+
+                    <form action="{{url_for('predict')}}" method ="POST">
+                <!-- <form action="predict" method="post">-->
+
+                                      AGE:<input type="number" name="age" ><br><br>
+                                      GENDER:<input type="number" name="gender" ><br><br>
+                                      STREAMS:<input type="number" name="stream" ><br><br>
+                                      INTERNS:<input type="number" name="interns" ><br><br>
+                                      CGPA:<input type="number" name="cgpa" ><br><br>
+                                      BACKLOG:<input type="number" name="backlog" ><br><br>
+                                      <button type="submit" value="submit">submit</button>
+
+                 </form>
+
+                 <h3>{{ y }}</h3>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</body>
+</body>
+</html>
